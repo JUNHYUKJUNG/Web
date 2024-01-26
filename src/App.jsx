@@ -1,5 +1,12 @@
+import { ThemeProvider } from "next-themes";
+import Home from "./pages/Home";
+
 const App = () => {
-  return <div className="bg-red-100">Hello, React!</div>;
+  return (
+    <ThemeProvider attribute="class">
+      <Home />
+    </ThemeProvider>
+  );
 };
 
 export default App;
