@@ -3,6 +3,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import { FaFileCode } from "react-icons/fa";
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import DarkmodeToggle from "./DarkmodeToggle";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -31,10 +32,12 @@ const Header = () => {
               <IoPersonSharp className="mr-1" />
               About Me
             </a>
-            <a className="mr-5 hover:text-gray-900 flex items-center">
-              <FaFileCode className="mr-1" />
-              Project
-            </a>
+            <Link to="/Project">
+              <a className="mr-5 hover:text-gray-900 flex items-center">
+                <FaFileCode className="mr-1" />
+                Project
+              </a>
+            </Link>
             <a className="mr-5 hover:text-gray-900 flex items-center">
               <TbMessageCircle2Filled className="mr-1" />
               Contact
