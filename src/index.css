@@ -90,3 +90,51 @@ p {
   @apply text-slate-500 dark:text-slate-400;
 }
 /* DarkMode */
+
+/* Main Folder */
+.item {
+  position: absolute;
+  font-size: 2em;
+}
+
+.item-a {
+  bottom: 50%;
+  left: 50%;
+}
+
+.item-b {
+  right: 22%;
+  top: 50%;
+}
+
+.item-c {
+  bottom: 25%;
+  left: 28%;
+}
+
+.item-d {
+  top: 17%;
+  left: 32%;
+}
+/* Main Folder */
+
+/* Header Footer Fixed */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-content {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow-y: auto;
+}
+/* Header Footer Fixed */
