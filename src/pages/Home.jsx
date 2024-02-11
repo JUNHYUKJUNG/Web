@@ -1,14 +1,13 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Layout from "../components/Layout";
 import Main from "../components/Main";
 
 const Home = () => {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <div className="bg-darkMode">
+      <Layout>
+        <Main />
+      </Layout>
+    </div>
   );
 };
 
