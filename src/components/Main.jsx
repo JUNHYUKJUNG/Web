@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import FolderClose from "../images/FolderClose.png";
+import YellowFolder from "../svg/YellowFolder";
+import GreenFolder from "../svg/GreenFolder";
+import BlueFolder from "../svg/BlueFolder";
 
 const Main = () => {
   const [aboutMe, setAboutMe] = useState(false);
@@ -15,23 +17,45 @@ const Main = () => {
           {/* aboutMe */}
           <div className="item folder-aboutMe">
             <button onClick={() => setAboutMe(!aboutMe)}>
-              <img src={FolderClose} alt="FolderClose" className="w-20" />
+              <YellowFolder />
             </button>
             {aboutMe && (
               <ul className="text-center bg-white submenu speech-bubble p-4">
                 <li>
-                  <Link to="/IntroduceDaoMarket">?</Link>
+                  <Link to="/">?</Link>
                 </li>
               </ul>
             )}
           </div>
           {/* aboutMe */}
-          <div className="item item-c">
-            <img src={FolderClose} alt="FolderClose" className="w-20" />
+          {/* contact */}
+          <div className="item folder-contact">
+            <button onClick={() => setContact(!contact)}>
+              <BlueFolder />
+            </button>
+            {contact && (
+              <ul className="text-center bg-white submenu speech-bubble p-4">
+                <li>
+                  <Link to="/Contact">?</Link>
+                </li>
+              </ul>
+            )}
           </div>
-          <div className="item item-d">
-            <img src={FolderClose} alt="FolderClose" className="w-20" />
+          {/* contact */}
+          {/* project */}
+          <div className="item folder-project">
+            <button onClick={() => setProject(!project)}>
+              <GreenFolder />
+            </button>
+            {project && (
+              <ul className="text-center bg-white submenu speech-bubble p-4">
+                <li>
+                  <Link to="/">?</Link>
+                </li>
+              </ul>
+            )}
           </div>
+          {/* project */}
         </div>
       </div>
     </section>
