@@ -15,16 +15,26 @@ const Main = () => {
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="container">
           <Draggable>
-            <div className="item item-a">A</div>
+            <div className="item item-a cursor-move">JUNHYUK JUNG</div>
           </Draggable>
           {/* aboutMe */}
           <Draggable>
             <div className="item folder-aboutMe">
-              <button onClick={() => setAboutMe(!aboutMe)}>
+              <button
+                className="text-lg cursor-help"
+                onClick={() => setAboutMe(!aboutMe)}
+              >
                 <YellowFolder />
+                <div className="ml-2">AboutMe</div>
               </button>
               {aboutMe && (
                 <ul className="text-center bg-white submenu speech-bubble p-4">
+                  <li>
+                    <Link to="/">JUNHYUK JUNG</Link>
+                  </li>
+                  <li>
+                    <Link to="/">?</Link>
+                  </li>
                   <li>
                     <Link to="/">?</Link>
                   </li>
@@ -36,13 +46,23 @@ const Main = () => {
           {/* contact */}
           <Draggable>
             <div className="item folder-contact">
-              <button onClick={() => setContact(!contact)}>
+              <button
+                className="text-lg cursor-alias"
+                onClick={() => setContact(!contact)}
+              >
                 <BlueFolder />
+                <div className="ml-2">Contact</div>
               </button>
               {contact && (
-                <ul className="text-center bg-white submenu speech-bubble p-4">
+                <ul className="text-left bg-white submenu speech-bubble p-4">
                   <li>
-                    <Link to="/Contact">?</Link>
+                    <Link to="/Contact">Directly</Link>
+                  </li>
+                  <li>
+                    <Link to="/">E-mail</Link>
+                  </li>
+                  <li>
+                    <Link to="/">?</Link>
                   </li>
                 </ul>
               )}
@@ -52,11 +72,21 @@ const Main = () => {
           {/* project */}
           <Draggable>
             <div className="item folder-project">
-              <button onClick={() => setProject(!project)}>
+              <button
+                className="text-lg cursor-zoom-in"
+                onClick={() => setProject(!project)}
+              >
                 <GreenFolder />
+                <div className="ml-2">Project</div>
               </button>
               {project && (
                 <ul className="text-center bg-white submenu speech-bubble p-4">
+                  <li>
+                    <Link to="/">?</Link>
+                  </li>
+                  <li>
+                    <Link to="/">?</Link>
+                  </li>
                   <li>
                     <Link to="/">?</Link>
                   </li>
