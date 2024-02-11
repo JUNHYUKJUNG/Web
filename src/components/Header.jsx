@@ -1,21 +1,16 @@
 import DarkmodeToggle from "./DarkmodeToggle";
 import { Link } from "react-router-dom";
-import DropDown from "./DropDown";
+import { RiArrowLeftLine } from "react-icons/ri";
 
 const Header = () => {
   return (
     <>
       <header className="text-gray-600 body-font header">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <Link to="/">
-            <div className="flex title-font font-medium items-center text-gray-900 dark:text-white mb-4 md:mb-0">
-              이미지
-              <span className="ml-3 text-xl">정준혁 포트폴리오</span>
-            </div>
-          </Link>
-          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-            <DropDown />
-          </nav>
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+          <div className="md:mr-auto flex">
+            <RiArrowLeftLine className="mt-1 mr-1" />
+            <Link to="/">Home</Link>
+          </div>
           <DarkmodeToggle />
         </div>
       </header>
