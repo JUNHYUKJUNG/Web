@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import YellowFolder from "../svg/YellowFolder";
-import GreenFolder from "../svg/GreenFolder";
-import BlueFolder from "../svg/BlueFolder";
+import BlackFolder from "../images/BlackFolder.png";
+import GrayFolder from "../images/GrayFolder.png";
+import YellowFolder from "../images/YellowFolder.png";
 import Draggable from "react-draggable";
 
 const Main = () => {
@@ -34,8 +34,16 @@ const Main = () => {
                   setIsClickedAboutMe(!isClickedAboutMe);
                 }}
               >
-                <YellowFolder />
-                <div className="ml-2">About Me</div>
+                <div
+                  style={{
+                    backgroundImage: `url(${YellowFolder})`,
+                    backgroundSize: "cover",
+                    width: "70px",
+                    height: "70px",
+                  }}
+                  alt="YellowFolder"
+                />
+                <div>About Me</div>
               </button>
               {aboutMe && (
                 <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
@@ -67,8 +75,16 @@ const Main = () => {
                   setIsClickedContact(!isClickedContact);
                 }}
               >
-                <BlueFolder />
-                <div className="ml-2">Contact</div>
+                <div
+                  style={{
+                    backgroundImage: `url(${BlackFolder})`,
+                    backgroundSize: "cover",
+                    width: "70px",
+                    height: "70px",
+                  }}
+                  alt="BlackFolder"
+                />
+                <div>Contact</div>
               </button>
               {contact && (
                 <ul className="text-left bg-white text-3xl submenu speech-bubble p-4">
@@ -100,8 +116,16 @@ const Main = () => {
                   setIsClickedProject(!isClickedProject);
                 }}
               >
-                <GreenFolder />
-                <div className="ml-2">Project</div>
+                <div
+                  style={{
+                    backgroundImage: `url(${GrayFolder})`,
+                    backgroundSize: "cover",
+                    width: "70px",
+                    height: "70px",
+                  }}
+                  alt="GrayFolder"
+                />
+                <div>Project</div>
               </button>
               {project && (
                 <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
