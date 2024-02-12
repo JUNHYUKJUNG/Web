@@ -24,9 +24,9 @@ const Main = () => {
           <Draggable>
             <div className="item folder-aboutMe">
               <button
-                className={`text-lg cursor-help px-6 py-3 border-4 ${
+                className={`text-lg cursor-help px-4 py-1 border-4 ${
                   isClickedAboutMe
-                    ? "bg-gray-400 border-gray-300"
+                    ? "bg-gray-300 border-gray-200"
                     : "border-transparent"
                 }`}
                 onClick={() => {
@@ -35,15 +35,15 @@ const Main = () => {
                 }}
               >
                 <YellowFolder />
-                <div className="ml-2">AboutMe</div>
+                <div className="ml-2">About Me</div>
               </button>
               {aboutMe && (
-                <ul className="text-center bg-white submenu speech-bubble p-4">
+                <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
                   <li>
                     <Link to="/">JUNHYUK JUNG</Link>
                   </li>
                   <li>
-                    <Link to="/">?</Link>
+                    <Link to="/">Resume</Link>
                   </li>
                   <li>
                     <Link to="/">?</Link>
@@ -57,9 +57,9 @@ const Main = () => {
           <Draggable>
             <div className="item folder-contact">
               <button
-                className={`text-lg cursor-alias px-6 py-3 border-4 ${
+                className={`text-lg cursor-alias px-4 py-1 border-4 ${
                   isClickedContact
-                    ? "bg-gray-400 border-gray-300"
+                    ? "bg-gray-300 border-gray-200"
                     : "border-transparent"
                 }`}
                 onClick={() => {
@@ -71,9 +71,9 @@ const Main = () => {
                 <div className="ml-2">Contact</div>
               </button>
               {contact && (
-                <ul className="text-left bg-white submenu speech-bubble p-4">
+                <ul className="text-left bg-white text-3xl submenu speech-bubble p-4">
                   <li>
-                    <Link to="/Contact">Directly</Link>
+                    <Link to="/Contact">Direct Message</Link>
                   </li>
                   <li>
                     <Link to="/">E-mail</Link>
@@ -90,9 +90,9 @@ const Main = () => {
           <Draggable>
             <div className="item folder-project">
               <button
-                className={`text-lg cursor-zoom-in px-6 py-3 border-4 ${
+                className={`text-lg cursor-zoom-in px-4 py-1 border-4 ${
                   isClickedProject
-                    ? "bg-gray-400 border-gray-300"
+                    ? "bg-gray-300 border-gray-200"
                     : "border-transparent"
                 }`}
                 onClick={() => {
@@ -104,12 +104,12 @@ const Main = () => {
                 <div className="ml-2">Project</div>
               </button>
               {project && (
-                <ul className="text-center bg-white submenu speech-bubble p-4">
+                <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
                   <li>
-                    <Link to="/">?</Link>
+                    <Link to="/">Frontend</Link>
                   </li>
                   <li>
-                    <Link to="/">?</Link>
+                    <Link to="/">Solidity</Link>
                   </li>
                   <li>
                     <Link to="/">?</Link>

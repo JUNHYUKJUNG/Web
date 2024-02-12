@@ -18,12 +18,12 @@
   position: absolute;
   border-radius: 0.4em;
   background-color: #f0f0f0;
-  margin-left: 50px;
-  margin-top: -100px;
-  padding: 40px;
+  margin-left: 90px;
+  margin-top: -50px;
+  padding: 25px;
   white-space: nowrap;
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 350px;
   overflow: auto;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
