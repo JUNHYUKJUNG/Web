@@ -9,7 +9,7 @@ const Header = () => {
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
           <div className="md:mr-auto">
             <Link to="/">
-              <div className="flex">
+              <div className="flex transition duration-300">
                 <RiArrowLeftLine className="mt-1 mr-1" />
                 Home
               </div>

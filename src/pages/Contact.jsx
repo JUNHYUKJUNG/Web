@@ -54,7 +54,7 @@ const Contact = () => {
                   name="message"
                   value={msg}
                   onChange={(e) => setMsg(e.target.value)}
-                  placeholder="성함 : &#13;&#10;연락 받으실 이메일 또는 연락처 : &#13;&#10;문의내용 :"
+                  placeholder="성함 : &#13;&#10;연락 받으실 이메일 또는 연락처 : &#13;&#10;하실 말씀 :"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-80 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 />
               </div>

@@ -6,6 +6,9 @@ import BlueFolder from "../svg/BlueFolder";
 import Draggable from "react-draggable";
 
 const Main = () => {
+  const [isClickedAboutMe, setIsClickedAboutMe] = useState(false);
+  const [isClickedProject, setIsClickedProject] = useState(false);
+  const [isClickedContact, setIsClickedContact] = useState(false);
   const [aboutMe, setAboutMe] = useState(false);
   const [project, setProject] = useState(false);
   const [contact, setContact] = useState(false);
@@ -21,8 +24,15 @@ const Main = () => {
           <Draggable>
             <div className="item folder-aboutMe">
               <button
-                className="text-lg cursor-help"
-                onClick={() => setAboutMe(!aboutMe)}
+                className={`text-lg cursor-help px-6 py-3 border-4 ${
+                  isClickedAboutMe
+                    ? "bg-gray-400 border-gray-300"
+                    : "border-transparent"
+                }`}
+                onClick={() => {
+                  setAboutMe(!aboutMe);
+                  setIsClickedAboutMe(!isClickedAboutMe);
+                }}
               >
                 <YellowFolder />
                 <div className="ml-2">AboutMe</div>
@@ -47,8 +57,15 @@ const Main = () => {
           <Draggable>
             <div className="item folder-contact">
               <button
-                className="text-lg cursor-alias"
-                onClick={() => setContact(!contact)}
+                className={`text-lg cursor-alias px-6 py-3 border-4 ${
+                  isClickedContact
+                    ? "bg-gray-400 border-gray-300"
+                    : "border-transparent"
+                }`}
+                onClick={() => {
+                  setContact(!contact);
+                  setIsClickedContact(!isClickedContact);
+                }}
               >
                 <BlueFolder />
                 <div className="ml-2">Contact</div>
@@ -73,8 +90,15 @@ const Main = () => {
           <Draggable>
             <div className="item folder-project">
               <button
-                className="text-lg cursor-zoom-in"
-                onClick={() => setProject(!project)}
+                className={`text-lg cursor-zoom-in px-6 py-3 border-4 ${
+                  isClickedProject
+                    ? "bg-gray-400 border-gray-300"
+                    : "border-transparent"
+                }`}
+                onClick={() => {
+                  setProject(!project);
+                  setIsClickedProject(!isClickedProject);
+                }}
               >
                 <GreenFolder />
                 <div className="ml-2">Project</div>
