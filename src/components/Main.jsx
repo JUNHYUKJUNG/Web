@@ -51,7 +51,7 @@ const Main = () => {
                   }}
                   alt="YellowFolder"
                 />
-                <div>About Me</div>
+                <div className="-ml-1">About Me</div>
               </button>
               {aboutMe && (
                 <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
