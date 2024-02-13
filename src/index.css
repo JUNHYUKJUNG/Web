@@ -90,9 +90,9 @@ p {
   font-size: 2em;
 }
 
-.item-a {
-  bottom: 50%;
-  left: 47%;
+.CD {
+  bottom: 38%;
+  left: 45%;
 }
 
 .folder-aboutMe {
@@ -135,6 +135,7 @@ p {
 /* Header Footer Fixed */
 
 /* Font */
+/* 하단 SNS FONT */
 @font-face {
   font-family: "Orbit-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2")
@@ -145,5 +146,18 @@ p {
 
 .Orbit {
   font-family: "Orbit-Regular";
+}
+
+/* 메인 폴더 FONT */
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.S-Core {
+  font-family: "S-CoreDream-3Light";
 }
 /* Font */

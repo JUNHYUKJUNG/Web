@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import BlackFolder from "../images/BlackFolder.png";
 import GrayFolder from "../images/GrayFolder.png";
 import YellowFolder from "../images/YellowFolder.png";
+import CD from "../images/CD.png";
 import Draggable from "react-draggable";
 
 const Main = () => {
@@ -15,10 +16,17 @@ const Main = () => {
 
   return (
     <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font main-content">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center S-Core font-bold">
         <div className="container">
           <Draggable>
-            <div className="item item-a cursor-move">JUNHYUK JUNG</div>
+            <div className="item CD cursor-move">
+              <img
+                src={CD}
+                alt="CD"
+                draggable="false"
+                className="w-[350px] h-[350px]"
+              />
+            </div>
           </Draggable>
           {/* aboutMe */}
           <Draggable>
@@ -38,8 +46,8 @@ const Main = () => {
                   style={{
                     backgroundImage: `url(${YellowFolder})`,
                     backgroundSize: "cover",
-                    width: "70px",
-                    height: "70px",
+                    width: "65px",
+                    height: "65px",
                   }}
                   alt="YellowFolder"
                 />
@@ -79,8 +87,8 @@ const Main = () => {
                   style={{
                     backgroundImage: `url(${BlackFolder})`,
                     backgroundSize: "cover",
-                    width: "70px",
-                    height: "70px",
+                    width: "65px",
+                    height: "65px",
                   }}
                   alt="BlackFolder"
                 />
@@ -120,8 +128,8 @@ const Main = () => {
                   style={{
                     backgroundImage: `url(${GrayFolder})`,
                     backgroundSize: "cover",
-                    width: "70px",
-                    height: "70px",
+                    width: "65px",
+                    height: "65px",
                   }}
                   alt="GrayFolder"
                 />
