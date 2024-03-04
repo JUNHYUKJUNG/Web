@@ -56,10 +56,10 @@ const Main = () => {
               {aboutMe && (
                 <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
                   <li>
-                    <Link to="/">JUNHYUK JUNG</Link>
+                    <Link to="/">jay</Link>
                   </li>
                   <li>
-                    <Link to="/">Resume</Link>
+                    <Link to="/">j</Link>
                   </li>
                   <li>
                     <Link to="/">?</Link>
@@ -138,10 +138,10 @@ const Main = () => {
               {project && (
                 <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
                   <li>
-                    <Link to="/">Frontend</Link>
+                    <Link to="/">J</Link>
                   </li>
                   <li>
-                    <Link to="/">Solidity</Link>
+                    <Link to="/">h</Link>
                   </li>
                   <li>
                     <Link to="/">?</Link>
