@@ -51,18 +51,18 @@ const Main = () => {
                   }}
                   alt="YellowFolder"
                 />
-                <div className="-ml-1">About Me</div>
+                <div>Untitled</div>
               </button>
               {aboutMe && (
                 <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
                   <li>
-                    <Link to="/">jay</Link>
+                    <Link to="/">Untitled</Link>
                   </li>
                   <li>
-                    <Link to="/">j</Link>
+                    <Link to="/">Untitled</Link>
                   </li>
                   <li>
-                    <Link to="/">?</Link>
+                    <Link to="/">Untitled</Link>
                   </li>
                 </ul>
               )}
@@ -92,18 +92,18 @@ const Main = () => {
                   }}
                   alt="BlackFolder"
                 />
-                <div>Contact</div>
+                <div>Untitled</div>
               </button>
               {contact && (
-                <ul className="text-left bg-white text-3xl submenu speech-bubble p-4">
+                <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
                   <li>
-                    <Link to="/Contact">Direct Message</Link>
+                    <Link to="/">Untitled</Link>
                   </li>
                   <li>
-                    <Link to="/">E-mail</Link>
+                    <Link to="/">Untitled</Link>
                   </li>
                   <li>
-                    <Link to="/">?</Link>
+                    <Link to="/">Untitled</Link>
                   </li>
                 </ul>
               )}
@@ -133,18 +133,18 @@ const Main = () => {
                   }}
                   alt="GrayFolder"
                 />
-                <div>Project</div>
+                <div>Untitled</div>
               </button>
               {project && (
                 <ul className="text-center bg-white text-3xl submenu speech-bubble p-4">
                   <li>
-                    <Link to="/">J</Link>
+                    <Link to="/">Untitled</Link>
                   </li>
                   <li>
-                    <Link to="/">h</Link>
+                    <Link to="/">Untitled</Link>
                   </li>
                   <li>
-                    <Link to="/">?</Link>
+                    <Link to="/">Untitled</Link>
                   </li>
                 </ul>
               )}
